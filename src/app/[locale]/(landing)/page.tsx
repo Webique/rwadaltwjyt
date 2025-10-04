@@ -5,8 +5,6 @@ import { use } from "react";
 
 import WhatsAppFloat from "@/components/whats-app-float";
 
-import GoogleMap from "./components/google-map";
-
 export default function IndexPage({ params }: PageProps<"/[locale]">) {
   const { locale } = use(params);
 
@@ -15,7 +13,7 @@ export default function IndexPage({ params }: PageProps<"/[locale]">) {
 
   return (
     <main>
-      <GoogleMap />
+      {/* <GoogleMap /> */}
       <WhatsAppFloat />
     </main>
   );
