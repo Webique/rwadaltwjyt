@@ -9,7 +9,7 @@ import { getLangDir } from "rtl-detect";
 import {
   Carousel,
   CarouselContent,
-  CarouselItem
+  CarouselItem,
 } from "@/components/ui/carousel";
 
 const ClientsSection = () => {
@@ -29,30 +29,30 @@ const ClientsSection = () => {
     { src: "/images/clients/8.png", width: 150, height: 150 },
     { src: "/images/clients/9.png", width: 150, height: 150 },
     { src: "/images/clients/10.png", width: 150, height: 150 },
-    { src: "/images/clients/11.png", width: 150, height: 150 }
+    { src: "/images/clients/11.png", width: 150, height: 150 },
   ];
 
   const achievements = [
     {
       number: "18+",
       label: t("achievements.yearsExperience"),
-      description: t("achievements.yearsExperienceDesc")
+      description: t("achievements.yearsExperienceDesc"),
     },
     {
       number: "100%",
       label: t("achievements.saudiWorkforce"),
-      description: t("achievements.saudiWorkforceDesc")
+      description: t("achievements.saudiWorkforceDesc"),
     },
     {
       number: "500+",
       label: t("achievements.clientsServed"),
-      description: t("achievements.clientsServedDesc")
+      description: t("achievements.clientsServedDesc"),
     },
     {
       number: "24/7",
       label: t("achievements.supportAvailable"),
-      description: t("achievements.supportAvailableDesc")
-    }
+      description: t("achievements.supportAvailableDesc"),
+    },
   ];
 
   return (
@@ -81,12 +81,12 @@ const ClientsSection = () => {
           opts={{
             align: "start",
             loop: true,
-            watchDrag: false
+            watchDrag: false,
           }}
           plugins={[
             AutoScroll({
-              speed: 1.5
-            })
+              speed: 1.5,
+            }),
           ]}
           className="max-w-full overflow-hidden pb-10"
         >
