@@ -8,8 +8,10 @@
       "scrollText": "Discover More"
     },
     "AboutSection": {
+      "badge": "About Us",
       "title": "About Us",
       "subtitle": "Rawad Al-Tawjih for Human Resources, Administrative and Government Relations Services",
+      "imageAlt": "About Rawad Al-Tawjih Company",
       "ourMission": "Our Mission",
       "ourMissionDesc": "To provide innovative and reliable solutions that enhance efficiency and operational effectiveness for our clients through a 100% qualified Saudi workforce.",
       "ourVision": "Our Vision",

@@ -7,7 +7,7 @@ import WhatsAppFloat from "@/components/whats-app-float";
 
 import ClientsSection from "./components/clients-section";
 
-// import AboutSection from "./components/about-section";
+import AboutSection from "./components/about-section";
 // import ContactSection from "./components/contact-section";
 import HeroSection from "./components/hero-section";
 // import ProcessSection from "./components/process-section";
@@ -23,7 +23,7 @@ export default function IndexPage({ params }: PageProps<"/[locale]">) {
   return (
     <main>
       <HeroSection />
-      {/* <AboutSection /> */}
+      <AboutSection />
       {/* <ServicesSection /> */}
       {/* <ProcessSection /> */}
       {/* <TestimonialsSection /> */}
