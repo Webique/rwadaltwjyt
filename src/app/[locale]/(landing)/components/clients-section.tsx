@@ -94,13 +94,14 @@ const ClientsSection = () => {
             {[...items, ...items, ...items].map((partner, index) => (
               <CarouselItem
                 key={index}
-                className="flex basis-auto items-center px-2 ps-3"
+                className="relative flex h-20 w-28 basis-auto items-center justify-center ps-3 sm:h-28 sm:w-40"
               >
                 <ExportedImage
                   src={partner.src}
                   alt={`client ${index + 1}`}
-                  width={partner.width}
-                  height={partner.height}
+                  fill
+                  className="object-contain"
+                  placeholder="empty"
                 />
               </CarouselItem>
             ))}
