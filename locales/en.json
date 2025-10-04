@@ -1,0 +1,82 @@
+{
+  "IndexPage": {
+    "WhatsAppFloat": {
+      "tooltip": "Contact us via WhatsApp"
+    }
+  },
+  "Error": {
+    "title": "Sorry, an unexpected error occurred!",
+    "description": "<p>We apologize for this error we encountered.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+  },
+  "NotFoundPage": {
+    "title": "The requested page was not found",
+    "description": "Sorry, please check the address bar in your browser or use navigation to go to a known page.",
+    "retryButton": "Retry",
+    "contactSupport": "Contact Technical Support",
+    "goBack": "Go Back",
+    "backToHome": "Back to Home"
+  },
+  "LocaleLayout": {
+    "name": "Rawad Al-Tawjih | Human Resources, Administrative and Government Relations Services",
+    "short_name": "Rawad Al-Tawjih",
+    "description": "We at Rawad Al-Tawjih Company are proud to provide professional expertise exceeding eighteen years in the field of specialized human resources services, administrative affairs management, and efficient government transactions processing. We strive to facilitate your business operations through innovative solutions and a 100% qualified Saudi workforce, ensuring you the highest levels of efficiency and operational excellence.",
+    "keywords": [
+      "Rawad Al-Tawjih",
+      "Human Resources",
+      "Administrative Services",
+      "Government Relations",
+      "Employee Management",
+      "Social Insurance",
+      "Wage Protection",
+      "Regulatory Compliance",
+      "Government Services",
+      "Business Management",
+      "Company Formation",
+      "Municipal Licenses",
+      "Business Services",
+      "Saudi Human Resources Services"
+    ]
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {🇸🇦 Arabic} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Header": {
+    "nav": {
+      "home": "Home",
+      "about": "About Us",
+      "services": "Our Services",
+      "contact": "Contact Us"
+    },
+    "cta": "Request Service Now",
+    "siteName": "Rawad Al-Tawjih",
+    "siteDescription": "Distinguished Professional Services"
+  },
+  "Footer": {
+    "home": "Home",
+    "about": "About Us",
+    "vision": "Vision & Mission",
+    "identity": "Corporate Identity",
+    "location": "Our Location",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "contactUs": "Contact Us",
+    "available24_7": "Available 24/7",
+    "connectViaWhatsApp": "Contact us via WhatsApp",
+    "copyright": "© {year} Rawad Al-Tawjih Company. All rights reserved",
+    "companyDescription": "We specialize in providing advanced human resources services and integrated administrative affairs, with a focus on professional quality and excellence in performance",
+    "hrServices": "Human Resources Services",
+    "administrativeServices": "Administrative Services",
+    "governmentRelations": "Government Relations",
+    "businessConsulting": "Business Consulting",
+    "socialMedia": {
+      "whatsapp": "WhatsApp",
+      "x": "X",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "facebook": "Facebook",
+      "tiktok": "TikTok"
+    },
+    "ourLocation": "Our Location on the Map"
+  }
+}
