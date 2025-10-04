@@ -179,8 +179,49 @@
       "description": "Discover what our clients say about our professional services and expertise in human resources and management"
     },
     "ProcessSection": {
+      "badge": "Our Methodology",
       "title": "How We Work With You",
-      "description": "We follow an organized and professional methodology to ensure delivering the best services and achieving your business goals"
+      "description": "We follow an organized and professional methodology to ensure delivering the best services and achieving your business goals",
+      "steps": {
+        "contact": {
+          "title": "Initial Contact",
+          "description": "We reach out to understand your business needs and identify the appropriate services"
+        },
+        "analysis": {
+          "title": "Analysis & Assessment",
+          "description": "We analyze your requirements and assess the current situation to develop a customized action plan"
+        },
+        "solution": {
+          "title": "Solution Delivery",
+          "description": "We present suitable solutions with detailed explanations of each service and its benefits"
+        },
+        "implementation": {
+          "title": "Implementation & Follow-up",
+          "description": "We begin implementing services with continuous monitoring to ensure achieving desired results"
+        },
+        "evaluation": {
+          "title": "Evaluation & Improvement",
+          "description": "We evaluate results and work on continuous improvement to ensure your complete satisfaction"
+        }
+      },
+      "cta": {
+        "title": "Why Choose Rawad Al-Tawjih?",
+        "description": "We are committed to providing distinguished services that help you achieve your business goals",
+        "features": {
+          "precision": {
+            "title": "Precision in Execution",
+            "description": "We adhere to deadlines and deliver high-quality services"
+          },
+          "partnership": {
+            "title": "True Partnership",
+            "description": "We work as a true partner for your success, not just a service provider"
+          },
+          "innovation": {
+            "title": "Innovative Solutions",
+            "description": "We provide innovative and customized solutions for your specific needs"
+          }
+        }
+      }
     }
   },
   "Error": {
