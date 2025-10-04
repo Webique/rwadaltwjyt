@@ -1,5 +1,154 @@
 {
   "IndexPage": {
+    "HeroSection": {
+      "learnMore": "اعرف المزيد",
+      "humanResources": "الموارد البشرية",
+      "humanResourcesDesc": "خدمات موارد بشرية مهنية مع خبرة تزيد عن 18 عاماً",
+      "administrative": "إدارية",
+      "administrativeDesc": "إدارة شاملة للشؤون الإدارية",
+      "governmentRelations": "العلاقات الحكومية",
+      "governmentRelationsDesc": "إنجاز المعاملات الحكومية بكفاءة عالية",
+      "compliance": "الامتثال",
+      "complianceDesc": "ضمان 100% من القوى العاملة السعودية المؤهلة"
+    },
+    "AboutSection": {
+      "title": "من نحن",
+      "ourMission": "رسالتنا",
+      "ourMissionDesc": "تقديم حلول مبتكرة وفعالة تسهل عملياتكم التجارية من خلال القوى العاملة السعودية المؤهلة والخبرة المهنية.",
+      "ourVision": "رؤيتنا",
+      "ourVisionDesc": "أن نكون المزود الرائد لخدمات الموارد البشرية والإدارية في المملكة العربية السعودية، معترف بنا لتميزنا وابتكارنا والتزامنا بنجاح العملاء.",
+      "ourValues": "قيمنا",
+      "achievements": {
+        "experience": "خبرة 18+ عاماً",
+        "experienceDesc": "أكثر من عقدين من الخبرة المهنية في خدمات الموارد البشرية والإدارية",
+        "saudiWorkforce": "100% قوى عاملة سعودية",
+        "saudiWorkforceDesc": "مهنيون سعوديون مؤهلون وذوو خبرة كاملة",
+        "compliance": "الامتثال التنظيمي",
+        "complianceDesc": "الامتثال الكامل لجميع اللوائح والمعايير السعودية",
+        "trackRecord": "سجل حافل",
+        "trackRecordDesc": "نجاح مستمر في تقديم خدمات عالية الجودة لعملائنا"
+      },
+      "values": {
+        "excellence": "التميز المهني",
+        "excellenceDesc": "نحافظ على أعلى معايير المهنية في جميع خدماتنا",
+        "clientCentric": "نهج يركز على العميل",
+        "clientCentricDesc": "نجاحكم هو أولويتنا، ونخصص خدماتنا لاحتياجاتكم",
+        "innovation": "الابتكار والكفاءة",
+        "innovationDesc": "نحسن عملياتنا باستمرار لتقديم نتائج أفضل",
+        "trust": "الثقة والموثوقية",
+        "trustDesc": "نبني علاقات طويلة الأمد مبنية على الثقة والتسليم المتسق"
+      },
+      "whyChooseUs": "لماذا تختاروننا؟",
+      "yearsExperience": "سنوات الخبرة",
+      "saudiWorkforce": "قوى عاملة سعودية",
+      "happyClients": "عملاء راضون",
+      "support": "دعم"
+    },
+    "ServicesSection": {
+      "title": "خدماتنا",
+      "services": "",
+      "stats": {
+        "yearsExperience": "سنوات الخبرة",
+        "saudiWorkforce": "قوى عاملة سعودية",
+        "clientsServed": "عملاء تم خدمتهم",
+        "supportAvailable": "دعم متاح"
+      },
+      "servicesList": {
+        "hr": {
+          "title": "خدمات الموارد البشرية",
+          "description": "حلول موارد بشرية شاملة تشمل التوظيف وإدارة الرواتب وعلاقات الموظفين",
+          "features": {
+            "recruitment": "التوظيف والاختيار",
+            "payroll": "إدارة الرواتب",
+            "relations": "علاقات الموظفين",
+            "performance": "إدارة الأداء"
+          }
+        },
+        "admin": {
+          "title": "الخدمات الإدارية",
+          "description": "دعم إداري شامل لتبسيط عملياتكم التجارية",
+          "features": {
+            "documents": "إدارة الوثائق",
+            "optimization": "تحسين العمليات",
+            "support": "الدعم الإداري",
+            "compliance": "إدارة الامتثال"
+          }
+        },
+        "government": {
+          "title": "العلاقات الحكومية",
+          "description": "التعامل الخبير مع جميع المعاملات الحكومية والامتثال التنظيمي",
+          "features": {
+            "transactions": "المعاملات الحكومية",
+            "compliance": "الامتثال التنظيمي",
+            "licenses": "إدارة التراخيص",
+            "documents": "معالجة الوثائق"
+          }
+        },
+        "consulting": {
+          "title": "الاستشارات التجارية",
+          "description": "استشارات استراتيجية لتعزيز أداء ونمو أعمالكم",
+          "features": {
+            "planning": "التخطيط الاستراتيجي",
+            "improvement": "تحسين العمليات",
+            "risk": "إدارة المخاطر",
+            "growth": "استشارات النمو"
+          }
+        }
+      },
+      "cta": {
+        "title": "مستعدون للبدء؟",
+        "description": "تواصلوا معنا اليوم لمناقشة احتياجاتكم التجارية واكتشاف كيف يمكن لخدماتنا المهنية مساعدتكم في تحقيق أهدافكم.",
+        "consultation": "طلب استشارة",
+        "portfolio": "عرض محفظتنا"
+      }
+    },
+    "ContactSection": {
+      "title": "تواصلوا",
+      "touch": "معنا",
+      "description": "مستعدون لرفع أعمالكم إلى المستوى التالي؟ تواصلوا معنا اليوم للحصول على استشارة واكتشاف كيف يمكن لخدماتنا المهنية مساعدتكم في تحقيق أهدافكم.",
+      "contactInfo": {
+        "title": "معلومات التواصل",
+        "description": "نحن هنا لمساعدتكم في جميع احتياجاتكم التجارية. تواصلوا معنا من خلال أي من القنوات التالية.",
+        "phone": "الهاتف",
+        "phoneValue": "+966509645040",
+        "phoneDesc": "اتصلوا بنا في أي وقت",
+        "email": "البريد الإلكتروني",
+        "emailValue": "rwadaltwjyt@gmail.com",
+        "emailDesc": "أرسلوا لنا بريداً إلكترونياً",
+        "location": "الموقع",
+        "locationValue": "المملكة العربية السعودية",
+        "locationDesc": "نخدم في جميع أنحاء المملكة",
+        "workingHours": "ساعات العمل",
+        "workingHoursValue": "متاحون على مدار الساعة",
+        "workingHoursDesc": "نحن هنا دائماً للمساعدة"
+      },
+      "quickContact": "تواصل سريع",
+      "form": {
+        "title": "أرسلوا لنا رسالة",
+        "description": "املأوا النموذج أدناه وسنرد عليكم خلال 24 ساعة.",
+        "firstName": "الاسم الأول",
+        "firstNamePlaceholder": "اسمكم الأول",
+        "lastName": "اسم العائلة",
+        "lastNamePlaceholder": "اسم عائلتكم",
+        "email": "البريد الإلكتروني",
+        "emailPlaceholder": "بريدكم.الإلكتروني@example.com",
+        "phone": "الهاتف",
+        "phonePlaceholder": "+966 50 123 4567",
+        "serviceInterest": "اهتمام بالخدمة",
+        "selectService": "اختروا خدمة",
+        "hrService": "خدمات الموارد البشرية",
+        "adminService": "الخدمات الإدارية",
+        "govService": "العلاقات الحكومية",
+        "consultingService": "الاستشارات التجارية",
+        "message": "الرسالة",
+        "messagePlaceholder": "أخبرونا عن احتياجاتكم التجارية...",
+        "sendMessage": "إرسال الرسالة"
+      },
+      "whatsapp": {
+        "title": "تفضلون واتساب؟",
+        "description": "انقر هنا للدردشة معنا مباشرة على واتساب"
+      }
+    },
     "WhatsAppFloat": {
       "tooltip": "تواصلوا معنا عبر واتساب"
     }
@@ -50,7 +199,8 @@
     },
     "cta": "اطلبوا الخدمة الآن",
     "siteName": "رواد التوجية",
-    "siteDescription": "خدمات مهنية متميزة"
+    "siteDescription": "خدمات مهنية متميزة",
+    "available24_7": "متاحون على مدار الساعة"
   },
   "Footer": {
     "home": "الرئيسية",

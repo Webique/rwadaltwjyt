@@ -1,24 +1,23 @@
 "use client";
 
+import { Mail, Phone } from "lucide-react";
+import { AnimatePresence, type Variants } from "motion/react";
 import * as m from "motion/react-m";
-import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
-import { Variants } from "motion";
-import { AnimatePresence } from "motion/react";
-import { Phone } from "lucide-react";
+import * as React from "react";
+import Link from "next/link";
 
-import { Button } from "@/components/ui/button";
-import { Link, usePathname } from "@/i18n/navigation.public";
-import Logo from "@/components/ui/logo";
-import { cn } from "@/lib/utils";
 import LocaleSwitcher from "@/components/locale-switcher";
+import { Button } from "@/components/ui/button";
+import Logo from "@/components/ui/logo";
 import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
 
 export default function Header() {
   const t = useTranslations("Header");
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const pathname = usePathname();
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navItems = [
     { label: t("nav.home"), href: "/" },
@@ -26,33 +25,6 @@ export default function Header() {
     { label: t("nav.services"), href: "#services" },
     { label: t("nav.contact"), href: "#contact" }
   ];
-
-  useEffect(() => {
-    if (pathname === "/") {
-      const handleScroll = () => {
-        setIsScrolled(window.scrollY > 20);
-      };
-
-      window.addEventListener("scroll", handleScroll);
-
-      return () => window.removeEventListener("scroll", handleScroll);
-    } else {
-      setIsScrolled(true);
-    }
-  }, [pathname]);
-
-  const headerVariants: Variants = {
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 0.3, ease: "easeInOut" }
-    },
-    hidden: {
-      y: -100,
-      opacity: 0,
-      transition: { duration: 0.3, ease: "easeInOut" }
-    }
-  };
 
   const mobileMenuVariants: Variants = {
     open: {
@@ -92,34 +64,71 @@ export default function Header() {
 
   return (
     <>
-      <m.header
-        variants={headerVariants}
-        initial="visible"
-        animate="visible"
+      <header
         className={cn(
-          "fixed top-0 z-50 w-full duration-300 ease-in-out",
-          isScrolled
-            ? "bg-white text-gray-900 shadow-lg lg:bg-white/95 lg:backdrop-blur-lg"
-            : "text-primary-foreground bg-white lg:bg-transparent"
+          "fixed top-0 z-50 w-full border-b",
+          isMenuOpen
+            ? "bg-background"
+            : "bg-background/95 supports-[backdrop-filter]:bg-background/60 backdrop-blur"
         )}
       >
-        <div className="layout py-3">
-          <div className="flex items-center justify-between duration-300">
-            {/* Logo */}
+        {/* Top Bar - Hidden on mobile */}
+        <div className="bg-primary text-primary-foreground hidden py-2 md:block">
+          <div className="layout">
+            <div className="flex items-center justify-between text-sm">
+              <div className="flex items-center space-x-6">
+                <m.a
+                  href={`tel:${siteConfig.support.phone}`}
+                  className="flex items-center space-x-2 hover:underline"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5 }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Phone className="h-4 w-4" />
+                  <span dir="ltr">{siteConfig.support.phone}</span>
+                </m.a>
+                <m.a
+                  href={`mailto:${siteConfig.support.email}`}
+                  className="flex items-center space-x-2 hover:underline"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Mail className="h-4 w-4" />
+                  <span>{siteConfig.support.email}</span>
+                </m.a>
+              </div>
+              <m.div
+                className="flex items-center space-x-4"
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <span className="text-sm">{t("available24_7")}</span>
+                <LocaleSwitcher className="text-white" isTop={true} />
+              </m.div>
+            </div>
+          </div>
+        </div>
 
+        {/* Main Header */}
+        <div className="layout">
+          <div className="flex h-16 items-center justify-between">
+            {/* Logo */}
             <m.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2, duration: 0.5 }}
             >
-              <Logo
-                smallInMobile
-                desClassName={isScrolled ? "text-gray-600" : "lg:text-white"}
-              />
+              <Logo smallInMobile />
             </m.div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden items-center gap-8 lg:flex">
+            <nav className="hidden items-center space-x-8 md:flex">
               {navItems.map((item, index) => (
                 <m.div
                   key={index}
@@ -130,11 +139,9 @@ export default function Header() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "relative px-1 text-sm font-medium tracking-wide transition-colors duration-300 hover:scale-105",
-                      isScrolled
-                        ? "hover:text-primary text-gray-700"
-                        : "text-white hover:text-white/80",
-                      "before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-current before:transition-all before:duration-300 hover:before:w-full"
+                      "text-foreground hover:text-primary relative font-medium transition-colors",
+                      "before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-current",
+                      "before:transition-all before:duration-300 hover:before:w-full"
                     )}
                   >
                     {item.label}
@@ -143,7 +150,8 @@ export default function Header() {
               ))}
             </nav>
 
-            <div className="flex items-center">
+            {/* CTA  */}
+            <div className="hidden items-center space-x-4 md:flex">
               <m.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -151,8 +159,7 @@ export default function Header() {
                 className="flex items-center"
               >
                 <Button
-                  className="group me-2 hidden rounded-full px-4 py-5 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl lg:inline-flex"
-                  size="lg"
+                  className="group me-2 px-4 py-5 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl lg:inline-flex"
                   asChild
                 >
                   <Link
@@ -161,51 +168,42 @@ export default function Header() {
                     rel="noopener noreferrer"
                   >
                     {t("cta")}
-                    <Phone className="h-5 w-5 transition group-hover:scale-95" />
                   </Link>
                 </Button>
-                <LocaleSwitcher className="w-auto" isTop={!isScrolled} />
               </m.div>
+            </div>
 
-              {/* Mobile Menu Button */}
+            {/* Mobile Menu Button */}
+            <div className="flex items-center space-x-2 md:hidden">
               <m.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3, duration: 0.5 }}
-                className="lg:hidden"
+                className="flex items-center"
               >
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                  className={cn(
-                    "p-2 transition-all duration-300 hover:scale-105 focus:ring-2 focus:ring-offset-2",
-                    isScrolled
-                      ? "hover:text-primary focus:ring-primary text-gray-700"
-                      : "hover:text-primary focus:ring-primary lg:text-primary-foreground lg:hover:bg-primary/80 lg:hover:text-primary-foreground/80 lg:focus:ring-primary-foreground text-gray-700"
-                  )}
-                  aria-label="Toggle mobile menu"
+                <LocaleSwitcher className="w-auto" isTop={false} />
+
+                <button
+                  className="text-foreground hover:bg-muted rounded-md p-2 transition-all duration-300 hover:scale-105"
+                  onClick={toggleMenu}
+                  aria-label="Toggle menu"
                 >
                   <div className="space-y-1.5">
                     <m.div
                       animate={
-                        isMobileMenuOpen
-                          ? { rotate: 45, y: 9 }
-                          : { rotate: 0, y: 0 }
+                        isMenuOpen ? { rotate: 45, y: 9 } : { rotate: 0, y: 0 }
                       }
                       transition={{ duration: 0.3 }}
                       className="h-0.5 w-6 bg-current"
                     />
                     <m.div
-                      animate={
-                        isMobileMenuOpen ? { opacity: 0 } : { opacity: 1 }
-                      }
+                      animate={isMenuOpen ? { opacity: 0 } : { opacity: 1 }}
                       transition={{ duration: 0.3 }}
                       className="h-0.5 w-6 bg-current"
                     />
                     <m.div
                       animate={
-                        isMobileMenuOpen
+                        isMenuOpen
                           ? { rotate: -45, y: -6 }
                           : { rotate: 0, y: 0 }
                       }
@@ -213,81 +211,70 @@ export default function Header() {
                       className="h-0.5 w-6 bg-current"
                     />
                   </div>
-                </Button>
+                </button>
               </m.div>
             </div>
           </div>
-        </div>
 
-        {/* Mobile Menu */}
-        <AnimatePresence>
-          {isMobileMenuOpen && (
-            <m.div
-              variants={mobileMenuVariants}
-              initial="closed"
-              animate="open"
-              exit="closed"
-              className={cn(
-                "overflow-hidden border-t lg:hidden",
-                isScrolled
-                  ? "border-gray-200 bg-white/95 backdrop-blur-lg"
-                  : "lg:bg-primary/95 lg:border-primary-foreground/20 border-gray-200 bg-white/95 backdrop-blur-lg lg:backdrop-blur-sm"
-              )}
-            >
-              <nav className="layout py-6">
-                <div className="space-y-4">
-                  {navItems.map((item, index) => (
-                    <m.div key={index} variants={mobileNavItemVariants}>
-                      <Link
-                        href={item.href}
-                        onClick={() => setIsMobileMenuOpen(false)}
-                        className={cn(
-                          "block rounded-lg px-4 py-3 text-base font-medium transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-offset-2",
-                          isScrolled
-                            ? "hover:bg-primary/10 hover:text-primary focus:ring-primary text-gray-700"
-                            : "hover:bg-primary/10 hover:text-primary focus:ring-primary lg:text-primary-foreground lg:hover:bg-primary-foreground/10 lg:focus:ring-primary-foreground text-gray-700"
-                        )}
-                      >
-                        {item.label}
-                      </Link>
-                    </m.div>
-                  ))}
+          {/* Mobile Menu */}
+          <AnimatePresence>
+            {isMenuOpen && (
+              <m.div
+                variants={mobileMenuVariants}
+                initial="closed"
+                animate="open"
+                exit="closed"
+                className="bg-background overflow-hidden border-t md:hidden"
+              >
+                <nav className="py-6">
+                  <div className="space-y-4 px-4">
+                    {navItems.map((item, index) => (
+                      <m.div key={index} variants={mobileNavItemVariants}>
+                        <Link
+                          href={item.href}
+                          onClick={() => setIsMenuOpen(false)}
+                          className="text-foreground hover:text-primary hover:bg-primary/10 focus:ring-primary block rounded-lg px-4 py-3 text-base font-medium transition-all duration-300 hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-offset-2"
+                        >
+                          {item.label}
+                        </Link>
+                      </m.div>
+                    ))}
 
-                  {/* CTA in Mobile Menu */}
-                  <m.div variants={mobileNavItemVariants} className="pt-4">
-                    <Button
-                      size="lg"
-                      className="group w-full justify-center"
-                      asChild
+                    {/* CTA in Mobile Menu */}
+                    <m.div
+                      variants={mobileNavItemVariants}
+                      className="border-t pt-4"
                     >
-                      <Link
+                      <a
                         href={siteConfig.links.whatsapp}
-                        onClick={() => setIsMobileMenuOpen(false)}
                         target="_blank"
                         rel="noopener noreferrer"
+                        className="block w-full"
+                        onClick={() => setIsMenuOpen(false)}
                       >
-                        {t("cta")}
-                        <Phone className="h-5 w-5 transition group-hover:scale-95" />
-                      </Link>
-                    </Button>
-                  </m.div>
-                </div>
-              </nav>
-            </m.div>
-          )}
-        </AnimatePresence>
-      </m.header>
+                        <Button className="bg-primary hover:bg-primary/90 text-primary-foreground w-full shadow-lg transition-all duration-300 hover:shadow-2xl">
+                          {t("cta")}
+                        </Button>
+                      </a>
+                    </m.div>
+                  </div>
+                </nav>
+              </m.div>
+            )}
+          </AnimatePresence>
+        </div>
+      </header>
 
       {/* Overlay for mobile menu */}
       <AnimatePresence>
-        {isMobileMenuOpen && (
+        {isMenuOpen && (
           <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm lg:hidden"
-            onClick={() => setIsMobileMenuOpen(false)}
+            className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm md:hidden"
+            onClick={() => setIsMenuOpen(false)}
           />
         )}
       </AnimatePresence>

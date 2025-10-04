@@ -1,5 +1,154 @@
 {
   "IndexPage": {
+    "HeroSection": {
+      "learnMore": "Learn More",
+      "humanResources": "Human Resources",
+      "humanResourcesDesc": "Professional HR services with 18+ years of expertise",
+      "administrative": "Administrative",
+      "administrativeDesc": "Comprehensive administrative affairs management",
+      "governmentRelations": "Government Relations",
+      "governmentRelationsDesc": "Efficient government transactions processing",
+      "compliance": "Compliance",
+      "complianceDesc": "100% qualified Saudi workforce guarantee"
+    },
+    "AboutSection": {
+      "title": "About",
+      "ourMission": "Our Mission",
+      "ourMissionDesc": "To provide innovative and efficient solutions that facilitate your business operations through our qualified Saudi workforce and professional expertise.",
+      "ourVision": "Our Vision",
+      "ourVisionDesc": "To be the leading provider of human resources and administrative services in Saudi Arabia, recognized for our excellence, innovation, and commitment to client success.",
+      "ourValues": "Our Values",
+      "achievements": {
+        "experience": "18+ Years Experience",
+        "experienceDesc": "Over two decades of professional expertise in HR and administrative services",
+        "saudiWorkforce": "100% Saudi Workforce",
+        "saudiWorkforceDesc": "Completely qualified and experienced Saudi professionals",
+        "compliance": "Regulatory Compliance",
+        "complianceDesc": "Full compliance with all Saudi regulations and standards",
+        "trackRecord": "Proven Track Record",
+        "trackRecordDesc": "Consistent success in delivering quality services to our clients"
+      },
+      "values": {
+        "excellence": "Professional Excellence",
+        "excellenceDesc": "We maintain the highest standards of professionalism in all our services",
+        "clientCentric": "Client-Centric Approach",
+        "clientCentricDesc": "Your success is our priority, and we tailor our services to your needs",
+        "innovation": "Innovation & Efficiency",
+        "innovationDesc": "We continuously improve our processes to deliver better results",
+        "trust": "Trust & Reliability",
+        "trustDesc": "We build long-term relationships based on trust and consistent delivery"
+      },
+      "whyChooseUs": "Why Choose Us?",
+      "yearsExperience": "Years Experience",
+      "saudiWorkforce": "Saudi Workforce",
+      "happyClients": "Happy Clients",
+      "support": "Support"
+    },
+    "ServicesSection": {
+      "title": "Our",
+      "services": "Services",
+      "stats": {
+        "yearsExperience": "Years Experience",
+        "saudiWorkforce": "Saudi Workforce",
+        "clientsServed": "Clients Served",
+        "supportAvailable": "Support Available"
+      },
+      "servicesList": {
+        "hr": {
+          "title": "Human Resources Services",
+          "description": "Complete HR solutions including recruitment, payroll management, and employee relations",
+          "features": {
+            "recruitment": "Recruitment & Selection",
+            "payroll": "Payroll Management",
+            "relations": "Employee Relations",
+            "performance": "Performance Management"
+          }
+        },
+        "admin": {
+          "title": "Administrative Services",
+          "description": "Comprehensive administrative support to streamline your business operations",
+          "features": {
+            "documents": "Document Management",
+            "optimization": "Process Optimization",
+            "support": "Administrative Support",
+            "compliance": "Compliance Management"
+          }
+        },
+        "government": {
+          "title": "Government Relations",
+          "description": "Expert handling of all government transactions and regulatory compliance",
+          "features": {
+            "transactions": "Government Transactions",
+            "compliance": "Regulatory Compliance",
+            "licenses": "License Management",
+            "documents": "Document Processing"
+          }
+        },
+        "consulting": {
+          "title": "Business Consulting",
+          "description": "Strategic consulting to enhance your business performance and growth",
+          "features": {
+            "planning": "Strategic Planning",
+            "improvement": "Process Improvement",
+            "risk": "Risk Management",
+            "growth": "Growth Consulting"
+          }
+        }
+      },
+      "cta": {
+        "title": "Ready to Get Started?",
+        "description": "Contact us today to discuss your business needs and discover how our professional services can help you achieve your goals.",
+        "consultation": "Request Consultation",
+        "portfolio": "View Our Portfolio"
+      }
+    },
+    "ContactSection": {
+      "title": "Get In",
+      "touch": "Touch",
+      "description": "Ready to take your business to the next level? Contact us today for a consultation and discover how our professional services can help you achieve your goals.",
+      "contactInfo": {
+        "title": "Contact Information",
+        "description": "We're here to help you with all your business needs. Reach out to us through any of the following channels.",
+        "phone": "Phone",
+        "phoneValue": "+966509645040",
+        "phoneDesc": "Call us anytime",
+        "email": "Email",
+        "emailValue": "rwadaltwjyt@gmail.com",
+        "emailDesc": "Send us an email",
+        "location": "Location",
+        "locationValue": "Saudi Arabia",
+        "locationDesc": "Serving nationwide",
+        "workingHours": "Working Hours",
+        "workingHoursValue": "24/7 Available",
+        "workingHoursDesc": "Always here to help"
+      },
+      "quickContact": "Quick Contact",
+      "form": {
+        "title": "Send us a Message",
+        "description": "Fill out the form below and we'll get back to you within 24 hours.",
+        "firstName": "First Name",
+        "firstNamePlaceholder": "Your first name",
+        "lastName": "Last Name",
+        "lastNamePlaceholder": "Your last name",
+        "email": "Email",
+        "emailPlaceholder": "your.email@example.com",
+        "phone": "Phone",
+        "phonePlaceholder": "+966 50 123 4567",
+        "serviceInterest": "Service Interest",
+        "selectService": "Select a service",
+        "hrService": "Human Resources Services",
+        "adminService": "Administrative Services",
+        "govService": "Government Relations",
+        "consultingService": "Business Consulting",
+        "message": "Message",
+        "messagePlaceholder": "Tell us about your business needs...",
+        "sendMessage": "Send Message"
+      },
+      "whatsapp": {
+        "title": "Prefer WhatsApp?",
+        "description": "Click here to chat with us directly on WhatsApp"
+      }
+    },
     "WhatsAppFloat": {
       "tooltip": "Contact us via WhatsApp"
     }
@@ -50,7 +199,8 @@
     },
     "cta": "Request Service Now",
     "siteName": "Rawad Al-Tawjih",
-    "siteDescription": "Distinguished Professional Services"
+    "siteDescription": "Distinguished Professional Services",
+    "available24_7": "Available 24/7"
   },
   "Footer": {
     "home": "Home",
