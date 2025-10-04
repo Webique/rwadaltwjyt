@@ -89,7 +89,7 @@ export default function ProcessSection() {
                   <CardContent className="p-8">
                     {/* Step Number */}
                     <div className="relative mb-6">
-                      <div className="bg-primary/10 mx-auto flex h-20 w-20 items-center justify-center rounded-full text-2xl font-bold text-primary shadow-md transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg">
+                      <div className="bg-primary/10 text-primary mx-auto flex h-20 w-20 items-center justify-center rounded-full text-2xl font-bold shadow-md transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg">
                         {step.number}
                       </div>
                     </div>

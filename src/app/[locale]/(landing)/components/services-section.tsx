@@ -26,7 +26,7 @@ export default function ServicesSection() {
         t("servicesList.hr.features.payroll"),
         t("servicesList.hr.features.relations"),
         t("servicesList.hr.features.performance")
-      ],
+      ]
     },
     {
       id: "admin",
