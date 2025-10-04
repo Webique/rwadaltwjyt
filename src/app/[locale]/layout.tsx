@@ -11,6 +11,8 @@ import RootProviders from "@/app/root-providers";
 
 import Document from "../document";
 
+export const dynamic = "force-static";
+
 type Params = Promise<{ locale: Locale }>;
 
 export function generateStaticParams() {
