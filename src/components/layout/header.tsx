@@ -73,7 +73,7 @@ export default function Header() {
         )}
       >
         {/* Top Bar - Hidden on mobile */}
-        <div className="bg-primary text-primary-foreground hidden py-2 md:block">
+        <div className="bg-primary text-primary-foreground hidden py-2 lg:block">
           <div className="layout">
             <div className="flex items-center justify-between text-sm">
               <div className="flex items-center space-x-6">
@@ -128,7 +128,7 @@ export default function Header() {
             </m.div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden items-center space-x-8 md:flex">
+            <nav className="hidden items-center space-x-8 lg:flex">
               {navItems.map((item, index) => (
                 <m.div
                   key={index}
@@ -151,7 +151,7 @@ export default function Header() {
             </nav>
 
             {/* CTA  */}
-            <div className="hidden items-center space-x-4 md:flex">
+            <div className="hidden items-center space-x-4 lg:flex">
               <m.div
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -174,7 +174,7 @@ export default function Header() {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="flex items-center space-x-2 md:hidden">
+            <div className="flex items-center space-x-2 lg:hidden">
               <m.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -224,7 +224,7 @@ export default function Header() {
                 initial="closed"
                 animate="open"
                 exit="closed"
-                className="bg-background overflow-hidden border-t md:hidden"
+                className="bg-background overflow-hidden border-t lg:hidden"
               >
                 <nav className="py-6">
                   <div className="space-y-4 px-4">
@@ -276,7 +276,7 @@ export default function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm md:hidden"
+            className="fixed inset-0 z-40 bg-black/20 backdrop-blur-sm lg:hidden"
             onClick={() => setIsMenuOpen(false)}
           />
         )}
