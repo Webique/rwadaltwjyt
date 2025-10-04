@@ -1,44 +1,43 @@
 {
   "IndexPage": {
     "HeroSection": {
+      "title": "Rawad Al-Tawjih",
+      "subtitle": "18+ years of experience in human resources and administrative affairs",
+      "contactCta": "Contact Us",
       "learnMore": "Learn More",
-      "humanResources": "Human Resources",
-      "humanResourcesDesc": "Professional HR services with 18+ years of expertise",
-      "administrative": "Administrative",
-      "administrativeDesc": "Comprehensive administrative affairs management",
-      "governmentRelations": "Government Relations",
-      "governmentRelationsDesc": "Efficient government transactions processing",
-      "compliance": "Compliance",
-      "complianceDesc": "100% qualified Saudi workforce guarantee"
+      "scrollText": "Discover More"
     },
     "AboutSection": {
-      "title": "About",
+      "title": "About Us",
+      "subtitle": "Rawad Al-Tawjih for Human Resources, Administrative and Government Relations Services",
       "ourMission": "Our Mission",
-      "ourMissionDesc": "To provide innovative and efficient solutions that facilitate your business operations through our qualified Saudi workforce and professional expertise.",
+      "ourMissionDesc": "To provide innovative and reliable solutions that enhance efficiency and operational effectiveness for our clients through a 100% qualified Saudi workforce.",
       "ourVision": "Our Vision",
-      "ourVisionDesc": "To be the leading provider of human resources and administrative services in Saudi Arabia, recognized for our excellence, innovation, and commitment to client success.",
+      "ourVisionDesc": "To become a leading company in the field of human resources services, administrative affairs and government relations.",
       "ourValues": "Our Values",
+      "ourValuesDesc": "The core values that guide our professional services",
       "achievements": {
         "experience": "18+ Years Experience",
-        "experienceDesc": "Over two decades of professional expertise in HR and administrative services",
+        "experienceDesc": "Our practical experience exceeds 18 years with the largest Saudi companies and businessmen",
         "saudiWorkforce": "100% Saudi Workforce",
-        "saudiWorkforceDesc": "Completely qualified and experienced Saudi professionals",
-        "compliance": "Regulatory Compliance",
-        "complianceDesc": "Full compliance with all Saudi regulations and standards",
-        "trackRecord": "Proven Track Record",
-        "trackRecordDesc": "Consistent success in delivering quality services to our clients"
+        "saudiWorkforceDesc": "Our team is 100% Saudi with sufficient expertise to provide the best services",
+        "compliance": "42 Clients in 2024",
+        "complianceDesc": "We aim to reach more than 100 clients in 2025",
+        "trackRecord": "Comprehensive Services",
+        "trackRecordDesc": "We provide our services by managing your work to manage employee affairs"
       },
       "values": {
         "excellence": "Professional Excellence",
-        "excellenceDesc": "We maintain the highest standards of professionalism in all our services",
-        "clientCentric": "Client-Centric Approach",
-        "clientCentricDesc": "Your success is our priority, and we tailor our services to your needs",
+        "excellenceDesc": "We excel with sufficient expertise to provide the best services for your business and make it easier for you",
+        "clientCentric": "Client Focus",
+        "clientCentricDesc": "We help you manage employee affairs and daily business operations",
         "innovation": "Innovation & Efficiency",
-        "innovationDesc": "We continuously improve our processes to deliver better results",
+        "innovationDesc": "We continuously work on developing capabilities, knowledge and training our team",
         "trust": "Trust & Reliability",
-        "trustDesc": "We build long-term relationships based on trust and consistent delivery"
+        "trustDesc": "Our team has high efficiency in the field of human resources and administrative affairs"
       },
       "whyChooseUs": "Why Choose Us?",
+      "whyChooseUsDesc": "We provide our services by managing your work to manage employee affairs and daily business operations, with a 100% qualified Saudi workforce.",
       "yearsExperience": "Years Experience",
       "saudiWorkforce": "Saudi Workforce",
       "happyClients": "Happy Clients",
@@ -165,6 +164,14 @@
         "supportAvailable": "Support Available",
         "supportAvailableDesc": "24/7 customer service"
       }
+    },
+    "TestimonialsSection": {
+      "title": "Client Testimonials",
+      "description": "Discover what our clients say about our professional services and expertise in human resources and management"
+    },
+    "ProcessSection": {
+      "title": "How We Work With You",
+      "description": "We follow an organized and professional methodology to ensure delivering the best services and achieving your business goals"
     }
   },
   "Error": {

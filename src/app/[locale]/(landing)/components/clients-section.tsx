@@ -9,7 +9,7 @@ import { getLangDir } from "rtl-detect";
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
+  CarouselItem
 } from "@/components/ui/carousel";
 
 const ClientsSection = () => {
@@ -29,34 +29,37 @@ const ClientsSection = () => {
     { src: "/images/clients/8.png", width: 150, height: 150 },
     { src: "/images/clients/9.png", width: 150, height: 150 },
     { src: "/images/clients/10.png", width: 150, height: 150 },
-    { src: "/images/clients/11.png", width: 150, height: 150 },
+    { src: "/images/clients/11.png", width: 150, height: 150 }
   ];
 
   const achievements = [
     {
       number: "18+",
       label: t("achievements.yearsExperience"),
-      description: t("achievements.yearsExperienceDesc"),
+      description: t("achievements.yearsExperienceDesc")
     },
     {
       number: "100%",
       label: t("achievements.saudiWorkforce"),
-      description: t("achievements.saudiWorkforceDesc"),
+      description: t("achievements.saudiWorkforceDesc")
     },
     {
       number: "500+",
       label: t("achievements.clientsServed"),
-      description: t("achievements.clientsServedDesc"),
+      description: t("achievements.clientsServedDesc")
     },
     {
       number: "24/7",
       label: t("achievements.supportAvailable"),
-      description: t("achievements.supportAvailableDesc"),
-    },
+      description: t("achievements.supportAvailableDesc")
+    }
   ];
 
   return (
-    <section id="clients" className="relative bg-gray-50 py-24">
+    <section
+      id="clients"
+      className="max-w-screen relative overflow-hidden bg-gray-50 py-24"
+    >
       <div className="relative">
         {/* Header */}
         <m.div
@@ -66,7 +69,7 @@ const ClientsSection = () => {
           viewport={{ once: true }}
           className="layout mb-16 text-center"
         >
-          <h2 className="text-primary mb-4 text-4xl font-bold md:text-5xl">
+          <h2 className="text-primary mb-4 text-4xl font-bold sm:text-5xl">
             {t("title")}
           </h2>
           <div className="bg-primary mx-auto mb-6 h-1 w-16 rounded-full"></div>
@@ -81,12 +84,12 @@ const ClientsSection = () => {
           opts={{
             align: "start",
             loop: true,
-            watchDrag: false,
+            watchDrag: false
           }}
           plugins={[
             AutoScroll({
-              speed: 1.5,
-            }),
+              speed: 1.5
+            })
           ]}
           className="max-w-full overflow-hidden pb-10"
         >
@@ -116,7 +119,7 @@ const ClientsSection = () => {
           viewport={{ once: true }}
           className="layout mb-16"
         >
-          <div className="mt-10 grid grid-cols-2 gap-8 md:grid-cols-4">
+          <div className="mt-10 grid grid-cols-2 gap-8 sm:grid-cols-4">
             {achievements.map((achievement, index) => (
               <m.div
                 key={index}
@@ -127,7 +130,7 @@ const ClientsSection = () => {
                 whileHover={{ y: -5 }}
                 className="group text-center"
               >
-                <div className="text-primary mb-2 text-4xl font-bold md:text-5xl">
+                <div className="text-primary mb-2 text-4xl font-bold sm:text-5xl">
                   {achievement.number}
                 </div>
                 <div className="mb-2 text-lg font-semibold text-gray-900">
