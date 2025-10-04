@@ -20,7 +20,7 @@ export function AnimatedCounter({
   delay = 0,
   suffix = "",
   prefix = "",
-  className = "",
+  className = ""
 }: AnimatedCounterProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -29,7 +29,7 @@ export function AnimatedCounter({
     end,
     duration,
     delay,
-    shouldStart: isInView,
+    shouldStart: isInView
   });
 
   return (

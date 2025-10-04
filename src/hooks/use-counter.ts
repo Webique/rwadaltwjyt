@@ -13,7 +13,7 @@ export function useCounter({
   end,
   duration = 2000,
   delay = 0,
-  shouldStart = false,
+  shouldStart = false
 }: UseCounterOptions) {
   const [count, setCount] = useState(start);
   const [isAnimating, setIsAnimating] = useState(false);

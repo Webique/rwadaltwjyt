@@ -13,23 +13,23 @@ export default function OurValuesSection() {
     {
       title: t("values.excellence"),
       description: t("values.excellenceDesc"),
-      icon: Award,
+      icon: Award
     },
     {
       title: t("values.clientCentric"),
       description: t("values.clientCentricDesc"),
-      icon: Users,
+      icon: Users
     },
     {
       title: t("values.innovation"),
       description: t("values.innovationDesc"),
-      icon: Lightbulb,
+      icon: Lightbulb
     },
     {
       title: t("values.trust"),
       description: t("values.trustDesc"),
-      icon: Shield,
-    },
+      icon: Shield
+    }
   ];
 
   return (

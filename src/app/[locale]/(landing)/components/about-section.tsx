@@ -17,23 +17,23 @@ export default function AboutSection() {
     {
       number: 18,
       suffix: "+",
-      label: t("achievements.experience"),
+      label: t("achievements.experience")
     },
     {
       number: 100,
       suffix: "%",
-      label: t("achievements.saudiWorkforce"),
+      label: t("achievements.saudiWorkforce")
     },
     {
       number: 42,
       suffix: "+",
-      label: t("achievements.compliance"),
+      label: t("achievements.compliance")
     },
     {
       number: 100,
       suffix: "+",
-      label: t("achievements.trackRecord"),
-    },
+      label: t("achievements.trackRecord")
+    }
   ];
 
   return (
