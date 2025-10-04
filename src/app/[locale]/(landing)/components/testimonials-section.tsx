@@ -103,7 +103,10 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section className="bg-primary/5 relative overflow-hidden py-24">
+    <section
+      id="testimonials"
+      className="bg-primary/5 relative overflow-hidden py-24"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <m.div

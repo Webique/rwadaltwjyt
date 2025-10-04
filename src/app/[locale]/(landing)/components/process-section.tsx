@@ -5,7 +5,7 @@ import {
   CheckCircle2,
   Lightbulb,
   PhoneCall,
-  SearchCheck,
+  SearchCheck
 } from "lucide-react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
@@ -20,36 +20,36 @@ export default function ProcessSection() {
       number: "01",
       title: t("steps.contact.title"),
       description: t("steps.contact.description"),
-      icon: PhoneCall,
+      icon: PhoneCall
     },
     {
       number: "02",
       title: t("steps.analysis.title"),
       description: t("steps.analysis.description"),
-      icon: SearchCheck,
+      icon: SearchCheck
     },
     {
       number: "03",
       title: t("steps.solution.title"),
       description: t("steps.solution.description"),
-      icon: Lightbulb,
+      icon: Lightbulb
     },
     {
       number: "04",
       title: t("steps.implementation.title"),
       description: t("steps.implementation.description"),
-      icon: CheckCircle2,
+      icon: CheckCircle2
     },
     {
       number: "05",
       title: t("steps.evaluation.title"),
       description: t("steps.evaluation.description"),
-      icon: Award,
-    },
+      icon: Award
+    }
   ];
 
   return (
-    <section id="process" className="relative overflow-hidden bg-white py-24">
+    <section id="process" className="relative overflow-hidden bg-white pb-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <m.div
