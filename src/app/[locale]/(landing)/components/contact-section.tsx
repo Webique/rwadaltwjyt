@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -16,27 +16,27 @@ export default function ContactSection() {
       title: t("contactInfo.phone"),
       value: t("contactInfo.phoneValue"),
       description: t("contactInfo.phoneDesc"),
-      href: "tel:+966509645040"
+      href: "tel:+966509645040",
     },
     {
       icon: Mail,
       title: t("contactInfo.email"),
       value: t("contactInfo.emailValue"),
       description: t("contactInfo.emailDesc"),
-      href: "mailto:" + t("contactInfo.emailValue")
+      href: "mailto:" + t("contactInfo.emailValue"),
     },
     {
       icon: MapPin,
       title: t("contactInfo.location"),
       value: t("contactInfo.locationValue"),
-      description: t("contactInfo.locationDesc")
+      description: t("contactInfo.locationDesc"),
     },
     {
       icon: Clock,
       title: t("contactInfo.workingHours"),
       value: t("contactInfo.workingHoursValue"),
-      description: t("contactInfo.workingHoursDesc")
-    }
+      description: t("contactInfo.workingHoursDesc"),
+    },
   ];
 
   return (
@@ -81,7 +81,7 @@ export default function ContactSection() {
                       <h3 className="text-lg font-semibold text-gray-900">
                         {info.title}
                       </h3>
-                      <p className="text-primary mt-1 font-medium">
+                      <p dir="ltr" className="text-primary mt-1 font-medium">
                         {info.value}
                       </p>
                       <p className="mt-2 text-sm text-gray-600">
