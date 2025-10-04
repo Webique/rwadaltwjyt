@@ -26,20 +26,20 @@ export default function Logo({
       href={href}
       aria-label="site-logo"
       className={cn(
-        "flex items-center gap-4",
-        smallInMobile && "gap-2 sm:gap-4",
+        "flex items-center gap-2.5",
+        smallInMobile && "gap-2 sm:gap-2.5",
         className
       )}
     >
       <ExportedImage
         className={cn(
-          "h-auto w-16 max-w-full overflow-hidden sm:w-20",
-          smallInMobile && "w-16 sm:w-20",
+          "h-auto w-16 max-w-full overflow-hidden sm:w-16",
+          smallInMobile && "w-16 sm:w-16",
           imgClassName
         )}
         src="/images/logo.png"
-        width={96}
-        height={96}
+        width={66}
+        height={48}
         placeholder="empty"
         priority
         alt="site-logo"
@@ -47,13 +47,18 @@ export default function Logo({
       <div>
         <span
           className={cn(
-            "from-primary/90 via-primary bg-gradient-to-r to-amber-500 bg-clip-text text-xl font-black",
-            smallInMobile && "text-sm leading-3 sm:text-base"
+            "via-primary/90 to-primary bg-gradient-to-r from-[#0E1B21]/90 bg-clip-text text-lg font-black text-transparent",
+            smallInMobile && "text-lg leading-normal"
           )}
         >
           {t("siteName")}
         </span>
-        <p className={cn("text-xs font-medium text-gray-600", desClassName)}>
+        <p
+          className={cn(
+            "!leading-1 text-sm font-medium italic text-gray-600",
+            desClassName
+          )}
+        >
           {t("siteDescription")}
         </p>
       </div>

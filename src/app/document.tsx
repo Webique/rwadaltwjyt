@@ -3,7 +3,7 @@ import "./globals.css";
 import { ReactNode } from "react";
 
 import RootProviders from "@/app/root-providers";
-import { cairoArabic } from "@/config/fonts";
+import { primaryFont } from "@/config/fonts";
 import { cn } from "@/lib/utils";
 
 type Props = {
@@ -25,7 +25,7 @@ export default function Document({ children, locale, direction }: Props) {
         suppressHydrationWarning
         className={cn(
           "flex h-full flex-col antialiased",
-          cairoArabic.className
+          primaryFont.className
         )}
       >
         <RootProviders direction={direction}>{children}</RootProviders>
