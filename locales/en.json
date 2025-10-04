@@ -16,8 +16,6 @@
       "ourMissionDesc": "To provide innovative and reliable solutions that enhance efficiency and operational effectiveness for our clients through a 100% qualified Saudi workforce.",
       "ourVision": "Our Vision",
       "ourVisionDesc": "To become a leading company in the field of human resources services, administrative affairs and government relations.",
-      "ourValues": "Our Values",
-      "ourValuesDesc": "The core values that guide our professional services",
       "achievements": {
         "experience": "18+ Years Experience",
         "experienceDesc": "Our practical experience exceeds 18 years with the largest Saudi companies and businessmen",
@@ -28,6 +26,17 @@
         "trackRecord": "Comprehensive Services",
         "trackRecordDesc": "We provide our services by managing your work to manage employee affairs"
       },
+      "whyChooseUs": "Why Choose Us?",
+      "whyChooseUsDesc": "We provide our services by managing your work to manage employee affairs and daily business operations, with a 100% qualified Saudi workforce.",
+      "yearsExperience": "Years Experience",
+      "saudiWorkforce": "Saudi Workforce",
+      "happyClients": "Happy Clients",
+      "support": "Support"
+    },
+    "OurValuesSection": {
+      "badge": "Our Values",
+      "title": "Our Values",
+      "description": "The core values that guide our professional services",
       "values": {
         "excellence": "Professional Excellence",
         "excellenceDesc": "We excel with sufficient expertise to provide the best services for your business and make it easier for you",
@@ -37,13 +46,7 @@
         "innovationDesc": "We continuously work on developing capabilities, knowledge and training our team",
         "trust": "Trust & Reliability",
         "trustDesc": "Our team has high efficiency in the field of human resources and administrative affairs"
-      },
-      "whyChooseUs": "Why Choose Us?",
-      "whyChooseUsDesc": "We provide our services by managing your work to manage employee affairs and daily business operations, with a 100% qualified Saudi workforce.",
-      "yearsExperience": "Years Experience",
-      "saudiWorkforce": "Saudi Workforce",
-      "happyClients": "Happy Clients",
-      "support": "Support"
+      }
     },
     "ServicesSection": {
       "title": "Our",
