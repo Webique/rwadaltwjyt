@@ -4,8 +4,8 @@ import { Mail, Phone } from "lucide-react";
 import { AnimatePresence, type Variants } from "motion/react";
 import * as m from "motion/react-m";
 import { useTranslations } from "next-intl";
-import * as React from "react";
 import Link from "next/link";
+import * as React from "react";
 
 import LocaleSwitcher from "@/components/locale-switcher";
 import { Button } from "@/components/ui/button";
@@ -23,7 +23,7 @@ export default function Header() {
     { label: t("nav.home"), href: "/" },
     { label: t("nav.about"), href: "#about" },
     { label: t("nav.services"), href: "#services" },
-    { label: t("nav.contact"), href: "#contact" }
+    { label: t("nav.contact"), href: "#contact" },
   ];
 
   const mobileMenuVariants: Variants = {
@@ -34,8 +34,8 @@ export default function Header() {
         duration: 0.3,
         ease: "easeInOut",
         staggerChildren: 0.1,
-        delayChildren: 0.1
-      }
+        delayChildren: 0.1,
+      },
     },
     closed: {
       opacity: 0,
@@ -44,22 +44,22 @@ export default function Header() {
         duration: 0.3,
         ease: "easeInOut",
         staggerChildren: 0.05,
-        staggerDirection: -1
-      }
-    }
+        staggerDirection: -1,
+      },
+    },
   };
 
   const mobileNavItemVariants: Variants = {
     open: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.3, ease: "easeOut" }
+      transition: { duration: 0.3, ease: "easeOut" },
     },
     closed: {
       opacity: 0,
       x: -20,
-      transition: { duration: 0.2, ease: "easeIn" }
-    }
+      transition: { duration: 0.2, ease: "easeIn" },
+    },
   };
 
   return (
@@ -69,7 +69,7 @@ export default function Header() {
           "fixed top-0 z-50 w-full border-b",
           isMenuOpen
             ? "bg-background"
-            : "bg-background/95 supports-[backdrop-filter]:bg-background/60 backdrop-blur"
+            : "bg-background/95 supports-[backdrop-filter]:bg-background/60 backdrop-blur",
         )}
       >
         {/* Top Bar - Hidden on mobile */}
@@ -141,7 +141,7 @@ export default function Header() {
                     className={cn(
                       "text-foreground hover:text-primary relative font-medium transition-colors",
                       "before:absolute before:bottom-0 before:left-0 before:h-0.5 before:w-0 before:bg-current",
-                      "before:transition-all before:duration-300 hover:before:w-full"
+                      "before:transition-all before:duration-300 hover:before:w-full",
                     )}
                   >
                     {item.label}
@@ -159,16 +159,16 @@ export default function Header() {
                 className="flex items-center"
               >
                 <Button
-                  className="group me-2 px-4 py-5 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl lg:inline-flex"
+                  className="group me-2 rounded-full px-5 py-5 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl lg:inline-flex"
                   asChild
                 >
-                  <Link
+                  <a
                     href={siteConfig.links.whatsapp}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     {t("cta")}
-                  </Link>
+                  </a>
                 </Button>
               </m.div>
             </div>
@@ -245,17 +245,20 @@ export default function Header() {
                       variants={mobileNavItemVariants}
                       className="border-t pt-4"
                     >
-                      <a
-                        href={siteConfig.links.whatsapp}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="block w-full"
-                        onClick={() => setIsMenuOpen(false)}
+                      <Button
+                        className="bg-primary hover:bg-primary/90 text-primary-foreground w-full shadow-lg transition-all duration-300 hover:shadow-2xl"
+                        asChild
                       >
-                        <Button className="bg-primary hover:bg-primary/90 text-primary-foreground w-full shadow-lg transition-all duration-300 hover:shadow-2xl">
+                        <a
+                          href={siteConfig.links.whatsapp}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block w-full"
+                          onClick={() => setIsMenuOpen(false)}
+                        >
                           {t("cta")}
-                        </Button>
-                      </a>
+                        </a>
+                      </Button>
                     </m.div>
                   </div>
                 </nav>
