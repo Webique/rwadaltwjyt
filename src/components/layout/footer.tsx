@@ -26,10 +26,10 @@ const Footer = () => {
   ];
 
   const services = [
-    { label: t("hrServices"), href: "#services" },
-    { label: t("administrativeServices"), href: "#services" },
-    { label: t("governmentRelations"), href: "#services" },
-    { label: t("businessConsulting"), href: "#services" }
+    { label: t("hrServices"), href: "#hr" },
+    { label: t("administrativeServices"), href: "#admin" },
+    { label: t("governmentRelations"), href: "#government" },
+    { label: t("businessConsulting"), href: "#consulting" }
   ];
 
   const socialLinks = [

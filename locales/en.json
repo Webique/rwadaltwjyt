@@ -49,8 +49,12 @@
       }
     },
     "ServicesSection": {
+      "badge": "Our Services",
       "title": "Our",
       "services": "Services",
+      "description": "We offer a comprehensive range of professional services designed to meet your business needs and help you achieve your goals efficiently and effectively.",
+      "servicesProvided": "Services Provided",
+      "discoverMore": "Discover More",
       "stats": {
         "yearsExperience": "Years Experience",
         "saudiWorkforce": "Saudi Workforce",
@@ -103,7 +107,7 @@
         "title": "Ready to Get Started?",
         "description": "Contact us today to discuss your business needs and discover how our professional services can help you achieve your goals.",
         "consultation": "Request Consultation",
-        "portfolio": "View Our Portfolio"
+        "getStarted": "Get Started Now"
       }
     },
     "ContactSection": {
