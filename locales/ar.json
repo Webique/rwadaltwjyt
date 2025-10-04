@@ -151,6 +151,20 @@
     },
     "WhatsAppFloat": {
       "tooltip": "تواصلوا معنا عبر واتساب"
+    },
+    "ClientsSection": {
+      "title": "عملاؤنا",
+      "description": "نفتخر بخدمة مجموعة متنوعة من العملاء من مختلف القطاعات، مما يعكس ثقتهم في خدماتنا المهنية",
+      "achievements": {
+        "yearsExperience": "سنوات الخبرة",
+        "yearsExperienceDesc": "أكثر من عقدين من الخبرة المهنية",
+        "saudiWorkforce": "قوى عاملة سعودية",
+        "saudiWorkforceDesc": "مهنيون سعوديون مؤهلون بالكامل",
+        "clientsServed": "عميل تم خدمتهم",
+        "clientsServedDesc": "عملاء راضون عن خدماتنا",
+        "supportAvailable": "دعم متاح",
+        "supportAvailableDesc": "خدمة عملاء على مدار الساعة"
+      }
     }
   },
   "Error": {

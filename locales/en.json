@@ -151,6 +151,20 @@
     },
     "WhatsAppFloat": {
       "tooltip": "Contact us via WhatsApp"
+    },
+    "ClientsSection": {
+      "title": "Our Clients",
+      "description": "We are proud to serve a diverse range of clients from various sectors, reflecting their trust in our professional services",
+      "achievements": {
+        "yearsExperience": "Years Experience",
+        "yearsExperienceDesc": "Over two decades of professional expertise",
+        "saudiWorkforce": "Saudi Workforce",
+        "saudiWorkforceDesc": "Fully qualified Saudi professionals",
+        "clientsServed": "Clients Served",
+        "clientsServedDesc": "Satisfied clients with our services",
+        "supportAvailable": "Support Available",
+        "supportAvailableDesc": "24/7 customer service"
+      }
     }
   },
   "Error": {

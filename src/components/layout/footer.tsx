@@ -22,37 +22,37 @@ const Footer = () => {
     { label: t("home"), href: "/" },
     { label: t("about"), href: "#about" },
     { label: t("services"), href: "#services" },
-    { label: t("contactUs"), href: "#contact" },
+    { label: t("contactUs"), href: "#contact" }
   ];
 
   const services = [
     { label: t("hrServices"), href: "#services" },
     { label: t("administrativeServices"), href: "#services" },
     { label: t("governmentRelations"), href: "#services" },
-    { label: t("businessConsulting"), href: "#services" },
+    { label: t("businessConsulting"), href: "#services" }
   ];
 
   const socialLinks = [
     {
       name: t("socialMedia.instagram"),
       url: siteConfig.links.instagram,
-      icon: Instagram,
+      icon: Instagram
     },
     {
       name: t("socialMedia.tiktok"),
       url: siteConfig.links.tiktok,
-      icon: Tiktok,
+      icon: Tiktok
     },
     {
       name: t("socialMedia.email"),
       url: `mailto:${siteConfig.support.email}`,
-      icon: Email,
+      icon: Email
     },
     {
       name: t("socialMedia.whatsapp"),
       url: siteConfig.support.whatsapp,
-      icon: Whatsapp2,
-    },
+      icon: Whatsapp2
+    }
   ];
 
   return (
@@ -200,7 +200,7 @@ const Footer = () => {
                   <social.icon
                     className={cn(
                       "fill-secondary-foreground stroke-secondary-foreground size-5",
-                      index === 2 && "fill-none",
+                      index === 2 && "fill-none"
                     )}
                   />
                 </m.a>
