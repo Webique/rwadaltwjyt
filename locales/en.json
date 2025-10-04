@@ -225,8 +225,10 @@
       "instagram": "Instagram",
       "linkedin": "LinkedIn",
       "facebook": "Facebook",
-      "tiktok": "TikTok"
+      "tiktok": "TikTok",
+      "email": "Email"
     },
-    "ourLocation": "Our Location on the Map"
+    "ourLocation": "Our Location on the Map",
+    "saudiArabia": "Saudi Arabia"
   }
 }
