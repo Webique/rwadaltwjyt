@@ -11,8 +11,8 @@ import ContactSection from "./components/contact-section";
 import HeroSection from "./components/hero-section";
 import OurValuesSection from "./components/our-values-section";
 import ProcessSection from "./components/process-section";
+import ReviewsSection from "./components/reviews-section";
 import ServicesSection from "./components/services-section";
-import TestimonialsSection from "./components/testimonials-section";
 
 export default function IndexPage({ params }: PageProps<"/[locale]">) {
   const { locale } = use(params);
@@ -28,7 +28,7 @@ export default function IndexPage({ params }: PageProps<"/[locale]">) {
       <ServicesSection />
       <ProcessSection />
       <ClientsSection />
-      <TestimonialsSection />
+      <ReviewsSection />
       <ContactSection />
       <WhatsAppFloat />
     </main>

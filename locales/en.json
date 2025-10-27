@@ -110,6 +110,18 @@
         "getStarted": "Get Started Now"
       }
     },
+    "ReviewsSection": {
+      "badge": "Client Reviews",
+      "title": "Client Reviews",
+      "description": "Discover what our real clients say about our services and expertise",
+      "reviews": {
+        "review1": {
+          "name": "Abdulaziz bin Ibrahim",
+          "review": "Brother Abu Saad is honest and professional and trustworthy, and that's what we need in our work",
+          "date": "11 months ago"
+        }
+      }
+    },
     "ContactSection": {
       "title": "Get In",
       "touch": "Touch",
@@ -175,48 +187,10 @@
       }
     },
     "TestimonialsSection": {
-      "badge": "Testimonials",
-      "title": "What Our",
-      "clients": "Clients Say",
-      "description": "Discover what our clients say about our professional services and expertise in human resources and management",
-      "testimonials": {
-        "ahmed": {
-          "name": "Ahmed Mohammed Al-Otaibi",
-          "company": "Advanced Technology Company",
-          "position": "HR Manager",
-          "content": "Rawad Al-Tawjih provided us with excellent services in human resources management. Their professional team helped us significantly improve our operations."
-        },
-        "fatima": {
-          "name": "Fatima Al-Salem",
-          "company": "Success Commercial Establishment",
-          "position": "CEO",
-          "content": "We are very pleased with the administrative services provided by Rawad Al-Tawjih. Punctuality and quality performance."
-        },
-        "mohammed": {
-          "name": "Mohammed Abdullah Al-Qahtani",
-          "company": "Modern Business Group",
-          "position": "Chairman of the Board",
-          "content": "Government relations were always a challenge for us, but Rawad Al-Tawjih made it easy and simple. We highly recommend them."
-        },
-        "noura": {
-          "name": "Noura Ahmed",
-          "company": "Comprehensive Development Company",
-          "position": "Operations Manager",
-          "content": "The business consulting provided by Rawad Al-Tawjih helped us make the right strategic decisions."
-        },
-        "khaled": {
-          "name": "Khaled Al-Mutairi",
-          "company": "Technical Innovation Foundation",
-          "position": "CFO",
-          "content": "Excellent customer service and 24/7 support. Rawad Al-Tawjih puts customer satisfaction first."
-        },
-        "reem": {
-          "name": "Reem Al-Otaibi",
-          "company": "Integrated Solutions Company",
-          "position": "Project Manager",
-          "content": "Professional and highly experienced team. They helped us complete all government transactions quickly and efficiently."
-        }
-      },
+      "badge": "Statistics",
+      "title": "Statistics",
+      "clients": "Company",
+      "description": "Our client statistics and results",
       "stats": {
         "satisfaction": "Client Satisfaction",
         "satisfactionDesc": "Of our clients are satisfied with our services",
